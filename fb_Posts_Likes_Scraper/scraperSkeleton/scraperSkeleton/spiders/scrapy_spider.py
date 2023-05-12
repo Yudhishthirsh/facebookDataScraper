@@ -98,8 +98,13 @@ class QuotesSpider(scrapy.Spider):
                             print(e)
                 all_posts.append(post)
                 # content_list.append(content)
-                items['posterName'] = posterName
-                items['numberOfLikes'] = numberOfLikes
-                items['peopleLiked'] = peopleLiked
-                items['postContent'] = postContent
+                parsedData = {
+                'posterName' : posterName,
+                'numberOfLikes' : numberOfLikes,
+                'peopleLiked' : peopleLiked,
+                'postContent' : postContent
+                }
+                data.append(parsedData)
+                df = pd.DataFrame(data)
+                df.to_csv('filename.csv', index=False)
                 yield items
