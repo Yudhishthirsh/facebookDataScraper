@@ -106,5 +106,5 @@ class QuotesSpider(scrapy.Spider):
                 }
                 data.append(parsedData)
                 df = pd.DataFrame(data)
-                df.to_csv('filename.csv', index=False)
+                df.to_csv('output.csv', index=False)
                 yield items
