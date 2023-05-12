@@ -7,6 +7,7 @@ import drivers
 import login
 import parameter
 from ..items import QuotesItem
+import pandas as pd
 
 
 class QuotesSpider(scrapy.Spider):
@@ -30,6 +31,7 @@ class QuotesSpider(scrapy.Spider):
 
 #data parsing function which will be scraped from the website.
     def parse(self, response, **kwargs):
+        data = []
         global posterName, peopleLiked, postContent
         items = QuotesItem()
         drivers.driver.get(response.url)
