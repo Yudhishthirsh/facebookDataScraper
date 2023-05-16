@@ -12,13 +12,21 @@ Before Running the spider run this command to create python path for all python 
 
 Now,
 To scrape data from facebook public groups you need a facebook login. Need to add your credentials in parameter.py file.
+
 1)Facebook_username = 'Enter Your Email or Username'
+
 2)Facebook_password = 'Password'
+
 #url from which need to scrape data
+
 3)URL= "https://www.facebook.com/groups/1225966920763001" #(sample URL)
+
 #Enter the relative path of your chromedriver
+
 4)relative_path = "./chromedriver.exe"
+
 #Enter number of scrolls you want.
+
 5)noOfScrolls = 100 
 
  Now Go to the scraperSkeleton(outer) directory using command in terminal mentined below cd .\scraperSkeleton\
