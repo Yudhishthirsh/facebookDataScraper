@@ -40,4 +40,4 @@ To scrape data from facebook public groups you need a facebook login. Need to ad
 After reaching to the scraperSkeleton directory Run following command in terminal. scrapy crawl fbCrawler --nolog in the terminal. Where output.csv(for reference) is the file name in which the output will be recorded
 
 Notes:
-1) After scraping approx 500 records the popup winow of the liked persons getting overlap on one another due to which script unable to scrape more data.
+1) Scripts run successfully in the scrapy framework using selenium to log in to facebook and scrape data from a facebook group and can extract upto 200 times scroll through the group and retrieve ~400 posts and beyond this stage, the script encountered elements which were not available for interact
