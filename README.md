@@ -8,7 +8,7 @@ https://www.jetbrains.com/help/pycharm/creating-virtual-environment.html#env-req
 
 After creating virtual environment in your project. install scrapy package in pycharm , install instaloader package using pip install instaloader , install pandas into the terminal using pip install pandas command in the Terminal To install all these packages use command: 
 
-pip install -r requirement.text
+pip install -r requirements.text
 
 Before Running the spider run this command to create python path for all python files in the directory
 
