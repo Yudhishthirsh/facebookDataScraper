@@ -8,13 +8,15 @@ https://www.jetbrains.com/help/pycharm/creating-virtual-environment.html#env-req
 
 After creating virtual environment in your project. install scrapy package in pycharm , install instaloader package using pip install instaloader , install pandas into the terminal using pip install pandas command in the Terminal To install all these packages use command: 
 
-pip install -r requirements.text
+pip install -r requirements.txt
 
 Before Running the spider run this command to create python path for all python files in the directory
 
 $env:PYTHONPATH = "Path of Directory;$env:PYTHONPATH" 
 
 Path of Directory:Main Project Directory which includes all files such as login,requirement and parameter, login, drivers.
+
+Change the forward slashes in the path to backward slashes from(/ to \)
 
 Now,
 To scrape data from facebook public groups you need a facebook login. Need to add your credentials in parameter.py file.
