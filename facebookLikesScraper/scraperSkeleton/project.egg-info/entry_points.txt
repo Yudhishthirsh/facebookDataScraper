@@ -1,2 +1,1 @@
 [scrapy]
-settings = quotes.settings
