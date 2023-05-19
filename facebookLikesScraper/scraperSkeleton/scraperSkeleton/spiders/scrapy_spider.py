@@ -32,7 +32,7 @@ class QuotesSpider(scrapy.Spider):
 #data parsing function which will be scraped from the website.
     def parse(self, response, **kwargs):
         data = []
-        global posterName, peopleLiked, postContent
+        global posterName, peopleLiked, postContent, numberOfLikes
         items = QuotesItem()
         drivers.driver.get(response.url)
         time.sleep(2)
@@ -108,5 +108,5 @@ class QuotesSpider(scrapy.Spider):
                 }
                 data.append(parsedData)
                 df = pd.DataFrame(data)
-                df.to_csv('output.csv', index=False)
+                df.to_csv(parameter.fileName, index=False)
                 yield items
