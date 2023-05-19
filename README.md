@@ -66,4 +66,8 @@ Now, to scrape data from facebook public groups you need a facebook login. Need 
 
 
 Notes:
-1) Scripts run successfully in the scrapy framework using selenium to log in to facebook and scrape data from a facebook group and can extract upto 200 times scroll through the group and retrieve ~400 posts and beyond this stage, the script encountered elements which were not available for interact
+1) Scripts run successfully in the scrapy framework using selenium to log in to facebook and scrape data from a facebook group and can extract upto 200 times scroll through 
+
+the group and retrieve ~400 posts and beyond this stage, the script encountered elements which were not available for interact
+
+3) Facebook Use to change their tags and Xpath frequently, in order to overcome that element not found error need to update the Xpath and the tags. Otherwise this script will not be locate the elements on web page and hence it will not able to scrape the data.
