@@ -1,4 +1,20 @@
 # facebookDataScraper
+This is the Facebook Scraping Framework which can be able to scrape publicly available data that is available on particular facebook page.
+--
+Using this script following data can be scraped from the facebook public pages:
+
+--"posterName" - Person name who has posted on the facebook page
+
+--"numberOfLikes" - Number of likes on a same post
+
+--"peopleLiked" - People name who have liked the post
+
+--"postContent" - Content written in post
+
+This script supports linux, windows OS.
+
+The script description is mentioned below
+--
 
 1) Open the project and go to the facebookLikesScraper in your windows terminal or on linux operating system.
 
@@ -12,13 +28,19 @@
 
 4) After reaching LinkedlnProfileUrlScraper directory run below command to create the Python path over all the directories and files in the project.
 
-   a) Command for Windows OS:
+a) Command for Windows OS:
 
                command = $env:PYTHONPATH = "Absolute Path of Directory;$env:PYTHONPATH" # Abslolute path of this "facebookLikesScraper" directory
   
-              While entering Absolute path of the directory ensure to change backword Slash (/) into forward slash(\) inside the path in case when running in windows machine.
+While entering Absolute path of the directory ensure to change backword Slash (/) into forward slash(\) inside the path in case when running in windows machine.
+              
+To run this script in cmd.exe in windows os :
 
-   b) Command for linux OS:   
+              set PYTHONPATH=Absolute path of the directory;%PYTHONPATH%
+             
+              No need of changing backward slashes in (/) while using cmd.exe
+
+b) Command for linux OS:   
 
                Command : export PYTHONPATH="Absolute Path of Directory" # Abslolute path of this "facebookLikesScraper" directory i your linux machine
   
@@ -40,7 +62,7 @@ Now, to scrape data from facebook public groups you need a facebook login. Need 
     
           For linux Machinne: chromeDriverPath = "./chromedriver" #In case when running this script in linux machine then need to update the chromeDriverPath.
           
-    Need to save the latest chromedriver versions for both linux and windows OS in order to run script successfully.
+          Need to save the latest chromedriver versions for both linux and windows OS in order to run script successfully.
 
    e) Enter number of scrolls you want.
             noOfScrolls = 100 
